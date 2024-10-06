@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/VOID-121/Jenkins-CI-CD-Pipeline.git'
+        git(url: 'https://github.com/VOID-121/Jenkins-CI-CD-Pipeline.git', branch: 'main')
       }
     }
 
